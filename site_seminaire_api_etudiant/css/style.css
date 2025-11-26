@@ -1,0 +1,265 @@
+/* --- Reset minimal --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Corps de la page --- */
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* --- Formulaire de sélection --- */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* --- Bouton d'inscription --- */
+button {
+    padding: 5px 15px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* --- Tableau des conférences --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* --- Messages utilisateur --- */
+p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #dc3545; /* rouge pour erreur */
+}
+
+/* --- Liens de connexion --- */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Login / Inscription isolé --- */
+#login-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 50px 20px; /* espace en haut */
+}
+
+/* centrer horizontalement uniquement */
+#login-page .card {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    width: 350px;
+    margin: 0 auto; /* centre horizontalement */
+}
+
+#login-page h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#login-page p.lead {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#login-page .field {
+    margin-bottom: 15px;
+}
+
+#login-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#login-page input[type="mail"],
+#login-page input[type="password"],
+#login-page input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#login-page input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+#login-page button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login-page button:hover {
+    background-color: #0056b3;
+}
+
+#login-page p.muted {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+
+#login-page p.muted a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#login-page p.muted a:hover {
+    text-decoration: underline;
+}
+
+#register-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+#register-page .card {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    width: 400px;
+    margin: 0 auto; /* centre horizontalement */
+}
+
+#register-page h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#register-page p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#register-page .field {
+    margin-bottom: 15px;
+}
+
+#register-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#register-page input[type="text"],
+#register-page input[type="mail"],
+#register-page input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#register-page input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+#register-page button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#register-page button:hover {
+    background-color: #0056b3;
+}
+
+#register-page p.muted,
+#register-page p.link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+#register-page p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#register-page p a:hover {
+    text-decoration: underline;
+}
